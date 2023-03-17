@@ -22,7 +22,9 @@ git clone https://github.com/Benson306/SSL-Bypass-Script
 cd SSL-Bypass-Script
 
 #Run script to potential Victim
-frida -U -f ssl.js
+frida -U -f <ApplicationPackageName> -l ssl.js
+
+#<ApplicationPackageName> should be replaced with the application package name e.g com.sendy.app
 ```
 
 ## Contributing
